@@ -4,10 +4,20 @@
 
 package frc.robot.subsystems;
 
+import com.revrobotics.spark.SparkMax;
+import com.revrobotics.spark.SparkLowLevel.MotorType;
+
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class ExampleSubsystem extends SubsystemBase {
+  
+  SparkMax motor = new SparkMax(1, MotorType.kBrushless);
+  SparkMax motor2 = new SparkMax(2, MotorType.kBrushless);
+  SparkMax motor3 = new SparkMax(3, MotorType.kBrushless);
+  SparkMax motor4 = new SparkMax(4, MotorType.kBrushless);
+  
+  
   /** Creates a new ExampleSubsystem. */
   public ExampleSubsystem() {}
 
